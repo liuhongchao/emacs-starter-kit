@@ -58,7 +58,6 @@
 (require 'dominating-file)
 
 ;; Load up starter kit customizations
-
 (require 'starter-kit-defuns)
 (require 'starter-kit-bindings)
 (require 'starter-kit-misc)
@@ -69,6 +68,7 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 (require 'starter-kit-python)
+(require 'starter-kit-erlang)
 (require 'starter-kit-completion)
 
 (regen-autoloads)
@@ -84,5 +84,12 @@
 (if (file-exists-p user-specific-config) (load user-specific-config))
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
+
+;; load my favorite theme
+(load-theme 'tsdh-dark)
+(set-face-attribute 'default nil :height 110)
+
+;; start the emacs server
+(server-start)
 
 ;;; init.el ends here
