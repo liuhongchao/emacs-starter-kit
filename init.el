@@ -89,6 +89,15 @@
 (load-theme 'tsdh-dark)
 (set-face-attribute 'default nil :height 110)
 
+;; my customized scratch buffer
+(add-hook 'emacs-startup-hook 'my-startup-fun)
+(defun my-startup-fun ()
+  "customzied scratch buffer"
+  (let ((my-buffer (get-buffer "*scratch*")))
+    (with-current-buffer my-buffer
+      (insert "Welcome back Hongchao!\n"))
+    (switch-to-buffer my-buffer)))
+
 ;; start the emacs server
 (server-start)
 
