@@ -85,8 +85,9 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
-;; load my favorite theme
-(load-theme 'tsdh-dark)
+;; load my favorite theme when running X
+(if (eq  (window-system) 'x)
+    (load-theme 'tsdh-dark))
 (set-face-attribute 'default nil :height 110)
 
 ;; my customized scratch buffer

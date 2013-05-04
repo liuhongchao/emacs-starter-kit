@@ -195,7 +195,7 @@
 
 ;; underline style for current line highlight
 (global-hl-line-mode t)
-(setq hl-line-face 'underline)
+;; (setq hl-line-face 'underline)
 
 ;; set the erc logs directory
 (setq erc-log-channels-directory "~/.erc/logs/")
