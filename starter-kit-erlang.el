@@ -62,7 +62,13 @@
 	    ;; add Erlang functions to an imenu menu
 	    (imenu-add-to-menubar "imenu")))
 
-(add-hook 'erlang-mode-hook '80whitespace_and_show_trailing_ws)
+;; show the trailing whitespace
+(defun 80_whitespace_and_show_trailing_ws()
+  (whitespace-mode t)
+  (setq whitespace-line-column 80)
+  (setq show-trailing-whitespace t))
+
+(add-hook 'erlang-mode-hook '80_whitespace_and_show_trailing_ws)
 (add-hook 'erlang-mode-hook 'linum-mode)
 
 (provide 'starter-kit-erlang)
