@@ -6,7 +6,7 @@
 (setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
 (require 'erlang-start)
 
-(add-to-list 'load-path "~/git/edts-rte/")
+(add-to-list 'load-path "~/.emacs.d/edts-rte/")
 (require 'edts-start)
 
 (setq edts-projects
