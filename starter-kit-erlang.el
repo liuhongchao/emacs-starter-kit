@@ -1,12 +1,12 @@
 ;; starter-kit-erlang.el - setup of erlang stuff
 
 ;; erlang mode setup
-(setq erlang-root-dir "/usr/lib/erlang")
-(setq load-path (cons "/usr/lib/erlang/lib/tools-2.6.7/emacs/" load-path))
-(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
+(setq load-path (cons "~/git/klarna/OTP/otp/lib/tools/emacs/" load-path))
+(setq erlang-root-dir "~/git/klarna/OTP/otp/")
+(setq exec-path (cons "~/git/klarna/OTP/otp/" exec-path))
 (require 'erlang-start)
 
-(add-to-list 'load-path "~/.emacs.d/edts-rte/")
+(add-to-list 'load-path "~/git/edts/")
 (require 'edts-start)
 
 (setq edts-projects
@@ -51,6 +51,12 @@
          (root       . "~/git/edts-rte/")
          (lib_dirs   . ("lib"))
          (node-sname . "edts")
+         )
+        ( ;; edts-rte
+         (name       . "kred")
+         (root       . "~/git/klarna/dev/")
+         (lib_dirs   . ("lib" "test"))
+         (node-sname . "kred")
         )
         ))
 

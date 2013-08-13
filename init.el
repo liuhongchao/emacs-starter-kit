@@ -88,7 +88,7 @@
 ;; load my favorite theme when running X
 (if (eq  (window-system) 'x)
     (load-theme 'tsdh-dark))
-(set-face-attribute 'default nil :height 110)
+(set-face-attribute 'default nil :height 180)
 
 ;; my customized scratch buffer
 (add-hook 'emacs-startup-hook 'my-startup-fun)
