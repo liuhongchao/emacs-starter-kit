@@ -218,5 +218,11 @@
 (setq whitespace-line-column 80)
 (setq show-trailing-whitespace t)
 
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 (provide 'starter-kit-misc)
 ;;; starter-kit-misc.el ends here
