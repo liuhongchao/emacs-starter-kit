@@ -100,5 +100,25 @@ exec-to-string command, but it works and seems fast"
 ;; TODO: set up ri
 ;; TODO: electric
 
+;; rails tags beginning
+(add-to-list 'load-path (concat dotfiles-dir "/etags-select"))
+(require 'etags-select)
+
+(defun rvm-gem-dirs ()
+  (let ((ruby-211-dir "/home/hongchao.liu/.rvm/gems/ruby-2.1.1/gems/"))
+  (mapcar (lambda (dir) (concat ruby-211-dir dir)) (cddr (directory-files ruby-211-dir)))))
+
+(defun filter_without_tags (Paths)
+  (my-filter (lambda (Path) (file-exists-p (concat Path "/" "TAGS"))) Paths))
+
+(defun my-filter (condp lst)
+  (delq nil (mapcar (lambda (x) (and (funcall condp x) x)) lst)))
+
+(setq tags-table-list
+      (eval `(quote ,(filter_without_tags (rvm-gem-dirs)))))
+
+(global-set-key (kbd "M-.") 'etags-select-find-tag)
+;; rails tags end
+
 (provide 'starter-kit-ruby)
 ;; starter-kit-ruby.el ends here
