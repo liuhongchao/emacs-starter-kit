@@ -105,8 +105,8 @@ exec-to-string command, but it works and seems fast"
 (require 'etags-select)
 
 (defun rvm-gem-dirs ()
-  (let ((ruby-211-dir "/home/hongchao.liu/.rvm/gems/ruby-2.1.1/gems/"))
-  (mapcar (lambda (dir) (concat ruby-211-dir dir)) (cddr (directory-files ruby-211-dir)))))
+  (let ((ruby-20-dir "/home/hongchao.liu/.rvm/gems/ruby-2.0/gems/"))
+  (mapcar (lambda (dir) (concat ruby-20-dir dir)) (cddr (directory-files ruby-20-dir)))))
 
 (defun filter_without_tags (Paths)
   (my-filter (lambda (Path) (file-exists-p (concat Path "/" "TAGS"))) Paths))
