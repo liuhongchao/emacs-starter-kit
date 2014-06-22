@@ -1,4 +1,4 @@
-# Emacs Starter Kit - Python Version
+# Emacs Starter Kit
 
 This fork of Emacs Starter Kit is the result of the merge between the
 original [Emacs Starter
