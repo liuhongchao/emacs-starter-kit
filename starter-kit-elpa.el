@@ -8,6 +8,7 @@
                                    'ruby-mode
                                    'inf-ruby
                                    'css-mode
+                                   'js2-mode
                                    'yaml-mode
                                    'find-file-in-project
                                    'magit
