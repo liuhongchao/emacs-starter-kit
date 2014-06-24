@@ -15,6 +15,8 @@
             (define-key css-mode-map "\M-\C-x" 'slime-js-refresh-css)
             (define-key css-mode-map "\C-c\C-r" 'slime-js-embed-css)))
 
+(setq slime-contribs '(slime-js))
+
 ;;(autoload 'espresso-mode "espresso" "Start espresso-mode" t)
 ;;(add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.json$" . espresso-mode))
