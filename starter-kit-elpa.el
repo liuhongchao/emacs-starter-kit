@@ -13,9 +13,13 @@
                                    'find-file-in-project
                                    'magit
                                    'auctex
+                                   'scala-mode2
+                                   'ensime
+                                   'sbt-mode
                                    'gist)
   "Libraries that should be installed by default.")
 
+;; TODO: refactor into different files
 (defun starter-kit-elpa-install ()
   "Install all starter-kit packages that aren't installed."
   (interactive)
