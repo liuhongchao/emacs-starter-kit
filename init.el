@@ -86,6 +86,9 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
+;; dirtree mode
+(require 'dirtree)
+
 ;; load my favorite theme when running X
 (if (eq  (window-system) 'x)
     (load-theme 'tsdh-dark))

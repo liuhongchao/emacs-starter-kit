@@ -16,6 +16,7 @@
                                    'scala-mode2
                                    'ensime
                                    'sbt-mode
+                                   'dirtree
                                    'gist)
   "Libraries that should be installed by default.")
 
