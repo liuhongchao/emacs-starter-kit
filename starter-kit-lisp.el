@@ -63,16 +63,16 @@
                                                (match-end 1) "ƒ")
                                nil))))))
 
-(add-to-list 'load-path "~/.emacs.d/slime/")
-(require 'slime-autoloads)
-
-(eval-after-load 'slime
-  '(define-key slime-mode-map (kbd "C-c p")
-     'slime-pprint-eval-last-expression))
-
-(eval-after-load 'slime-repl
-  '(define-key slime-repl-mode-map (kbd "C-c p")
-     'slime-pprint-eval-last-expression))
+;;(add-to-list 'load-path "~/.emacs.d/slime/")
+;;(require 'slime-autoloads)
+;;
+;;(eval-after-load 'slime
+;;  '(define-key slime-mode-map (kbd "C-c p")
+;;     'slime-pprint-eval-last-expression))
+;;
+;;(eval-after-load 'slime-repl
+;;  '(define-key slime-repl-mode-map (kbd "C-c p")
+;;     'slime-pprint-eval-last-expression))
 
 (provide 'starter-kit-lisp)
 ;; starter-kit-lisp.el ends here

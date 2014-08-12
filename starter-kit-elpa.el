@@ -7,15 +7,20 @@
 (defvar starter-kit-packages (list 'idle-highlight
                                    'ruby-mode
                                    'inf-ruby
+
                                    'css-mode
                                    'js2-mode
+                                   'nodejs-repl
+
                                    'yaml-mode
                                    'find-file-in-project
-                                   'magit
-                                   'auctex
+
                                    'scala-mode2
                                    'ensime
                                    'sbt-mode
+
+                                   'magit
+                                   'auctex
                                    'dirtree
                                    'gist)
   "Libraries that should be installed by default.")

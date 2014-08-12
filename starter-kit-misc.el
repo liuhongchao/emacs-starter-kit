@@ -177,9 +177,9 @@
 (defun update-diff-colors ()
   "update the colors for diff faces"
   (set-face-attribute 'diff-added nil
-                      :foreground "white" :background "darkgreen")
+                      :foreground "white" :background "black")
   (set-face-attribute 'diff-removed nil
-                      :foreground "white" :background "darkred")
+                      :foreground "white" :background "black")
   (set-face-attribute 'diff-context nil
                       :foreground "white" :background "black")
   (set-face-attribute 'diff-changed nil
