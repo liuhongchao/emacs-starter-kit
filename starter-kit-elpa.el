@@ -11,6 +11,8 @@
                                    'css-mode
                                    'js2-mode
                                    'nodejs-repl
+                                   'tern
+                                   'tern-auto-complete
 
                                    'yaml-mode
                                    'find-file-in-project
