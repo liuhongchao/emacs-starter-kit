@@ -37,7 +37,7 @@
       save-place-file (concat dotfiles-dir "places"))
 
 (add-to-list 'safe-local-variable-values '(lexical-binding . t))
-(add-to-list 'safe-local-variable-values '(whitespace-line-column . 80))
+(add-to-list 'safe-local-variable-values '(whitespace-line-column . 100))
 
 ;; Set this to whatever browser you use
 ;; (setq browse-url-browser-function 'browse-url-firefox)
@@ -115,11 +115,7 @@
 ;; Associate modes with file extensions
 
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
-(add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.ya?ml$" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.xml$" . nxml-mode))
 
 (eval-after-load 'grep
@@ -215,7 +211,7 @@
 
 ;; white space
 (whitespace-mode t)
-(setq whitespace-line-column 80)
+(setq whitespace-line-column 100)
 (setq show-trailing-whitespace t)
 
 (autoload 'markdown-mode "markdown-mode"

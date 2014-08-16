@@ -9,7 +9,7 @@
                                    'inf-ruby
 
                                    'css-mode
-                                   'js2-mode
+                                   'js3-mode
                                    'nodejs-repl
                                    'tern
                                    'tern-auto-complete
