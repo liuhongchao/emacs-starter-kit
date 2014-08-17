@@ -100,7 +100,7 @@
   "customzied scratch buffer"
   (let ((my-buffer (get-buffer "*scratch*")))
     (with-current-buffer my-buffer
-      (insert "Welcome back Hongchao!\n"))
+      (insert (concat "fortune says:\n\n" (shell-command-to-string "fortune"))))
     (switch-to-buffer my-buffer)))
 
 ;; start the emacs server
