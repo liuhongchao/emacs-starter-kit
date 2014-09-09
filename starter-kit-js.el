@@ -9,7 +9,8 @@
 (add-hook 'js3-mode-hook
           (lambda ()
             (tern-mode t)
-            (whitespace-mode)))
+            (whitespace-mode)
+            (auto-complete-mode)))
 (setq tern-command (cons (executable-find "tern") '()))
 
 (custom-set-variables

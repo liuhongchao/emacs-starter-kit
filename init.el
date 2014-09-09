@@ -69,6 +69,7 @@
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
+(require 'starter-kit-scala)
 (require 'starter-kit-python)
 (require 'starter-kit-completion)
 
@@ -88,6 +89,9 @@
 
 ;; dirtree mode
 (require 'dirtree)
+
+;; enable global auto-complete mode
+(global-auto-complete-mode t)
 
 ;; load my favorite theme when running X
 (if (eq  (window-system) 'x)
