@@ -71,7 +71,7 @@
 (require 'starter-kit-js)
 (require 'starter-kit-scala)
 (require 'starter-kit-python)
-(require 'starter-kit-completion)
+;(require 'starter-kit-completion)
 
 (regen-autoloads)
 (load custom-file 'noerror)
@@ -91,7 +91,7 @@
 (require 'dirtree)
 
 ;; enable global auto-complete mode
-(global-auto-complete-mode t)
+;;(global-auto-complete-mode t)
 
 ;; load my favorite theme when running X
 (if (eq  (window-system) 'x)
